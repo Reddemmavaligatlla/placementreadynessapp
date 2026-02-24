@@ -1,0 +1,141 @@
+/**
+ * KodNest Premium Build System - Global Styles
+ * Calm, intentional, coherent, confident
+ */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+/* CSS Custom Properties */
+:root {
+  /* Colors */
+  --kodnest-bg: #F7F6F3;
+  --kodnest-bg-hover: #EFEDE8;
+  --kodnest-bg-active: #E8E6E0;
+  --kodnest-text: #111111;
+  --kodnest-text-secondary: #4A4A4A;
+  --kodnest-text-muted: #6B6B6B;
+  --kodnest-accent: #8B0000;
+  --kodnest-accent-hover: #6B0000;
+  --kodnest-accent-active: #4A0000;
+  --kodnest-success: #4A7C59;
+  --kodnest-success-light: #E8F5EC;
+  --kodnest-warning: #B8860B;
+  --kodnest-warning-light: #FDF6E3;
+  --kodnest-error: #8B0000;
+  --kodnest-error-light: #FDF2F2;
+  --kodnest-border: #D4D2CC;
+  --kodnest-border-light: #E8E6E0;
+  --kodnest-white: #FFFFFF;
+
+  /* Typography */
+  --kodnest-font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --kodnest-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Spacing */
+  --kodnest-space-xs: 8px;
+  --kodnest-space-sm: 16px;
+  --kodnest-space-md: 24px;
+  --kodnest-space-lg: 40px;
+  --kodnest-space-xl: 64px;
+
+  /* Layout */
+  --kodnest-topbar-height: 64px;
+  --kodnest-max-width: 1440px;
+  --kodnest-workspace: 70%;
+  --kodnest-panel: 30%;
+
+  /* Transitions */
+  --kodnest-transition-fast: 150ms ease-in-out;
+  --kodnest-transition-base: 200ms ease-in-out;
+
+  /* Border Radius */
+  --kodnest-radius-sm: 4px;
+  --kodnest-radius-md: 8px;
+  --kodnest-radius-lg: 12px;
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--kodnest-font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--kodnest-text);
+  background-color: var(--kodnest-bg);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--kodnest-font-serif);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--kodnest-text);
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+p {
+  max-width: 720px;
+  line-height: 1.8;
+}
+
+/* Links */
+a {
+  color: var(--kodnest-accent);
+  text-decoration: none;
+  transition: color var(--kodnest-transition-fast);
+}
+
+a:hover {
+  color: var(--kodnest-accent-hover);
+}
+
+/* Focus States */
+:focus-visible {
+  outline: 2px solid var(--kodnest-accent);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--kodnest-accent);
+  color: var(--kodnest-white);
+}
